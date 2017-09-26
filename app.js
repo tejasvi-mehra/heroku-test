@@ -121,7 +121,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/',function(req, res){
-	console.log("here")
+	console.log("here");
+	console.log("YAAYAYAYYAYAYAYAYYAYA")
 });
 
 app.post('/sort', function(req, res){
