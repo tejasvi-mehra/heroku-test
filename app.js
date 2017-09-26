@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require ('express-session'); 
+var session = require ('express-session');
 var passport = require ('passport');
 var expressValidator = require ('express-validator');
 var LocalStrategy = require('passport-local').Strategy;
@@ -90,6 +90,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(3000, function(){
-	console.log("port started at 3000");
+app.listen(process.env.PORT || 3000, function(){
+	console.log("port started ");
 });
