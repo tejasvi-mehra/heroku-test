@@ -142,8 +142,8 @@ app.post('/calculateemptyarea', function(req, res){
 })
 
 app.post('122.115.77.77/user/0191-67/case/1990s', function(req, res){
-  var input = req.body;
-  console.log(input);
+//  var input = req.body;
+  console.log("herheherhe");
 });
 
 app.listen(process.env.PORT || 3000, function(){
